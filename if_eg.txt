@@ -1,0 +1,35 @@
+
+a=1
+
+until [ "$a" == 5 ]; do
+    echo "Value of a: $a"
+    ((a++))
+done
+
+echo "Exited the loop"
+
+if [ "$a" >= 5 ]; then
+    echo "The value of a is greater than 5."
+if [ "$a" >= 5 ]; then
+    echo "The value of a is greater than 5."
+
+fi
+
+fi
+
+select DRINK in tea cofee water juice appe all none
+do
+   case $DRINK in ;;;;;
+      tea|cofee|water|all) 
+         echo "Go to canteen"
+         ;;
+      juice|appe)
+         echo "Available at home"
+      ;;
+      none) 
+         break 
+      ;;
+      *) echo "ERROR: Invalid selection" 
+      ;;
+   esac
+done
